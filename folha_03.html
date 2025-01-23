@@ -21,7 +21,23 @@
             border-radius: 4px;
         }
 
-        #myBtn:hover {
+        
+        #backBtn {
+            position: fixed;
+            bottom: 20px;
+            left: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover, #backBtn:hover {
             background-color: #555;
         }
     </style>
@@ -31,26 +47,34 @@
         <div class="row justify-content-center my-3">
             <div class="col col-md-6">
 
+                <a href="folha_02.html" id="backBtn" class="text-decoration-none">Anterior</a>
                 <a href="folha_04.html" id="myBtn" class="text-decoration-none">Próximo</a>
 
                 <div class="card">
                     <div class="card-body">
-                        <h5>BIBLIOTECA PIONEIRA DE ADMINISTRAÇÃO E NEGÓCIOS</h5>
-                        <br><br><br><br><br><br><br>
-                        <p>
-                            <i><small>Conselho Diretor:</small></i>
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Prof. CARLOS JOSÉ MALFERRARI
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Prof. DANIEL SORIANI DOS SANTOS
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Prof. JOÃO BOSCO LODI
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Prof. JOSÉ WILSON SARAIVA
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Profa. LENITA CORRÊA CAMARGO
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Prof. REGINALDO UELZE
+                        <h5><i>Uma Introdução Programada ao</i></h5>
+                        <h1 class="display-1 text-center fw-bold">P E R T</h1>
+                        <h5 class="text-center">AVALIAÇÃO DE PROGRAMA E TÉCNICA DE REVISÃO</h5>
+                        <br>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td class="bg-dark text-white fw-bold text-center align-middle">ITT</td>
+                                <td>
+                                    FEDERAL ELECTRIC CORPORTATION
+                                    <br>
+                                    <i><small>Uma subsidiária da International Telephone & Telegraph Corporation</small></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src="img/img01.png" class="img-fluid mx-auto d-block">
+                        <p class="text-center">
+                            <i>Tradução de</i>
+                            <br>REGINALDO UELZE
+                            <br>DANIEL DOS SANTOS
+                            <br>VIRGILIO SPINOLA<br>
+                            <i>da Faculdade de Ciências Econômicas da universidade Mackenzie</i>
                         </p>
-                        <br><br><br>
-                        <p>
-                            <i><small>Conselho Orientador:</small></i>
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; (Em organização)
-                        </p>
+                        <img src="img/livraria_pioneira_editora_logo_centralizado.png" alt="" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
             </div>
