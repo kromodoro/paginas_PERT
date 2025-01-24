@@ -2,6 +2,8 @@
 [DIGITALIZAÇÃO][LIVRO] Uma introdução programada ao PERT : avaliação de programa e técnica de revisão
 
 https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub
+
+```
 (<math>
     <msub>
         <mi>T</mi>
@@ -22,15 +24,18 @@ https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub
         <mn>e</mn>
     </msub>
 </math>).
+```
 
 
 
 https://imasters.com.br/desenvolvimento/bash-for-loop-primeiro-passo-na-automacao-no-linux
+```
 {
     for counter in $(seq 3 9); do cat 002.html > "00${counter}.html"; done
     for counter in $(seq 10 99); do cat 002.html > "0${counter}.html"; done
     for counter in $(seq 100 148); do cat 002.html > "${counter}.html"; done
 }
+```
 
 ```
 for ($i = 2; $i < 148;$i++) {
