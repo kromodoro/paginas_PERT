@@ -38,13 +38,14 @@ https://imasters.com.br/desenvolvimento/bash-for-loop-primeiro-passo-na-automaca
 ```
 
 ```
-for ($i = 2; $i < 148;$i++) {
+for ($i = 2; $i <= 148;$i++) {
 	$valor = str_pad($i, 3, 0, STR_PAD_LEFT);
     $aux = $valor;
     $min = $aux - 1;
     $max = $aux + 1;
 	echo "sed -i 's/001.html/" . str_pad($min, 3, 0, STR_PAD_LEFT) .".html/' {$valor}.html<br>";
 	echo "sed -i 's/002.html/" . str_pad($max, 3, 0, STR_PAD_LEFT) .".html/' {$valor}.html<br>";
+    echo "sed -i 's/qwerty/{$i}/' {$valor}.html<br>";
     echo "<br>";
 }
 ?>
