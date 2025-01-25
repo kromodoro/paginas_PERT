@@ -52,3 +52,14 @@ for ($i = 2; $i <= 148;$i++) {
 ```
 
 55 imagens
+
+
+<img src="img/img01.png" class="img-fluid mx-auto d-block">
+
+<div>
+    <ol type="a">
+        <li>Sim ................................................ <a href="002.html"><i>Veja página 2</i></a></li>
+        <li>Não ............................................... <a href="003.html"><i>Veja página 3</i></a></li>
+        <li>Eu Não sei .................................. <a href="004.html"><i>Veja página 4</i></a></li>
+    </ol>
+</div>
