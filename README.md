@@ -54,7 +54,7 @@ for ($i = 2; $i <= 148;$i++) {
 55 imagens
 
 
-<img src="img/img01.png" class="img-fluid mx-auto d-block">
+<img src="../img/img01.png" class="img-fluid mx-auto d-block">
 
 <div>
     <ol type="a">
@@ -63,3 +63,7 @@ for ($i = 2; $i <= 148;$i++) {
         <li>Eu Não sei .................................. <a href="004.html"><i>Veja página 4</i></a></li>
     </ol>
 </div>
+
+
+
+<a href="001.html"><i>Volte para a página 1 e escolha outra resposta.</i></a>
