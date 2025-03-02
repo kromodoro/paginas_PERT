@@ -1,6 +1,10 @@
 # paginas_PERT
 [DIGITALIZAÇÃO][LIVRO] Uma introdução programada ao PERT : avaliação de programa e técnica de revisão
 
+LINK: https://kromodoro.github.io/paginas_PERT/
+
+<hr>
+
 https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub
 
 ```
