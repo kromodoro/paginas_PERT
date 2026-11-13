@@ -5,6 +5,44 @@ LINK: https://kromodoro.github.io/paginas_PERT/
 
 <hr>
 
+## Estrutura
+
+```
+/
+├── index.html            # capa
+├── folha_01..04.html     # folhas de rosto
+├── objetivos*.html       # objetivos
+├── prefacio_*.html       # prefácios (pt/en)
+├── agradecimentos.html
+├── paginas/              # 001.html .. 148.html
+├── img/                  # imagens digitalizadas
+└── assets/
+    ├── css/style.css     # estilos compartilhados por todas as páginas
+    └── js/theme.js       # dark mode (cookie) + config do Tailwind
+```
+
+Todas as páginas usam o mesmo `<head>`:
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/theme.js"></script>       <!-- ../assets/... nas páginas de paginas/ -->
+<link rel="stylesheet" href="assets/css/style.css">
+```
+
+- **Classe de texto/link:** `link-answer` (links azuis sublinhados dentro do texto) e `indent-1`
+  (recuo de 40px) substituem os antigos `style="..."` repetidos.
+- **Listas:** o reset do Tailwind remove marcadores; `style.css` devolve `1.` / `a.` / `•`
+  dentro de `.content-card`.
+- **Tabelas do livro:** `pert-data` (tabelas em `<table>`) e `pert-table` (blocos alinhados em
+  fonte monoespaçada) reproduzem as tabelas da edição impressa.
+- **Tema:** `theme.js` aplica o tema salvo no cookie `darkMode` antes da renderização e liga o
+  botão `#darkModeToggle`.
+- **Legado:** `style.css` mantém regras mínimas para classes herdadas do Bootstrap
+  (`img-fluid`, `d-block`, `table-bordered`, `fw-bold`, `text-decoration-underline`, `bg-dark`),
+  que não existem no Tailwind.
+
+<hr>
+
 https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub
 
 ```

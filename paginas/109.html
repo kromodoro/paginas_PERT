@@ -4,110 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>P E R T</title>
+    <!-- Tailwind via CDN: utilitários de layout -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // Configuração do Tailwind para dark mode
-        tailwind.config = {
-            darkMode: 'class',
-        }
-    </script>
-    <style>
-        /* Botões de navegação melhorados */
-        .nav-button {
-            position: fixed;
-            bottom: 30px;
-            z-index: 50;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        #backBtn {
-            left: 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        #backBtn:hover {
-            background: linear-gradient(135deg, #5568d3 0%, #63408b 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        #myBtn {
-            right: 30px;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-        }
-
-        #myBtn:hover {
-            background: linear-gradient(135deg, #d97fe3 0%, #d94657 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Botão de Dark Mode */
-        #darkModeToggle {
-            position: fixed;
-            top: 20px;
-            right: 30px;
-            z-index: 50;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 10px 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        #darkModeToggle:hover {
-            background: linear-gradient(135deg, #5568d3 0%, #63408b 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Card centralizado com largura máxima */
-        .content-card {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Responsividade para mobile */
-        @media (max-width: 768px) {
-            .nav-button {
-                padding: 10px 16px;
-                font-size: 14px;
-                bottom: 20px;
-            }
-
-            #backBtn {
-                left: 15px;
-            }
-
-            #myBtn {
-                right: 15px;
-            }
-
-            #darkModeToggle {
-                top: 15px;
-                right: 15px;
-                padding: 8px 14px;
-                font-size: 12px;
-            }
-        }
-    </style>
+    <!-- Tema (dark mode) + configuração do Tailwind -->
+    <script src="../assets/js/theme.js"></script>
+    <!-- Estilos compartilhados do projeto -->
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <div class="container mx-auto px-4">
@@ -123,60 +25,53 @@
                             109
                         </div>
                         <hr>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;O símbolo PR é usado para representar à probabilidade.No nosso exemplo anterior da página 103, o valor de Z era — 2,9.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Na tabela da página 109, verificamos que a probabilidade de cumprirmos a data planejada de 20 dias para o Evento 3 é de 0,0019.Ou seja PR = 0,0019 = 0,19%VAMOS TOMAR MAIS UM EXEMPLOA data planejada para o Evento 5 é 45 dias após o início do projeto.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;O problema é calcular a probabilidade de cumprir essa data, pré-estabelecida (PR)EVENTO ANTECESSOREVENTO SUCESSORambte12710129,80,7259121712,31,81316182018,00,43520242623,71,0562373,50,7147898,00,14614182017,71,0Substituindo na fórmulaOlhando na tabela da página 109 obtemos para um Z de 2,8 uma probabilidade de PR = 0,9974 ou 99,74%.Em outras palavras, nossa probabilidade de cumprir a data pré-estabelecida de 45 dias para o Evento 5, é de 0,9974 ou 99,74%.Note que, quando somamos o para o Evento 5, tomamos o caminho que liga os Eventos 1, 3, 5.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Por que usamos esse caminho em vez do que liga os Eventos 1, 2, 5?O caminho que liga os Eventos 1, 3, 5 é mais crítico que o outro ……... <a href="110.html" style="color: #2563eb; text-decoration: underline;"><i>vire para a página 110</i></a>.Qualquer caminho que nos levasse ao Evento 5, nos daria à mesma resposta ............ <a href="111.html" style="color: #2563eb; text-decoration: underline;"><i>vire para a página 111</i></a>.TÁBUA DOS VALORES DE UMA FUNÇÃO DE DISTRIBUIÇÃO NORMAL*ZOZO0,00,5000– 30,00130,10,5398– 2,90,00190,20,5793– 2,80,00260,30,6179– 2,70,00350,40,6554– 2,60,00470,50,6915– 2,50,00620,60,7257– 2,40,00820,70,7580– 2,30,01070,80,7881– 2,20,01390,90,8159– 2,10,01791,00,8413– 2,00,02281,10,8643– 1,90,02871,20,8849– 1,80,03591,30,9032– 1,70,04461,40,9192– 1,60,05481,50,9332– 1,50,06681,60,9452– 1,40,08081,70,9554– 1,30,09681,80,9641– 1,20,11511,90,9713– 1,10,13572,00,9772– 1,00,15872,10,9821– 0,90,18412,20,9861– 0,80,21192,30,9893– 0,70,24202,40,9918– 0,60,27432,50,9938– 0,50,30852,60,9953– 0,40,34462,70,9965– 0,30,38212,80,9974– 0,20,42072,90,9981– 0,10,46023,00,9987– 0,00,5000*Esta é uma tabela comum e pode ser facilmente encontrada na maioria dos livros de Matemática ou Estatística.Você respondeu que o cami</p>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;TÁBUA DOS VALORES DE UMA FUNÇÃO DE DISTRIBUIÇÃO NORMAL*</p>
+                        <div class="overflow-x-auto">
+                        <table class="table table-bordered pert-data">
+                        <thead><tr><th>Z</th><th>O</th><th>Z</th><th>O</th></tr></thead>
+                        <tbody>
+                        <tr><td>0,0</td><td>0,5000</td><td>– 3</td><td>0,0013</td></tr>
+                        <tr><td>0,1</td><td>0,5398</td><td>– 2,9</td><td>0,0019</td></tr>
+                        <tr><td>0,2</td><td>0,5793</td><td>– 2,8</td><td>0,0026</td></tr>
+                        <tr><td>0,3</td><td>0,6179</td><td>– 2,7</td><td>0,0035</td></tr>
+                        <tr><td>0,4</td><td>0,6554</td><td>– 2,6</td><td>0,0047</td></tr>
+                        <tr><td>0,5</td><td>0,6915</td><td>– 2,5</td><td>0,0062</td></tr>
+                        <tr><td>0,6</td><td>0,7257</td><td>– 2,4</td><td>0,0082</td></tr>
+                        <tr><td>0,7</td><td>0,7580</td><td>– 2,3</td><td>0,0107</td></tr>
+                        <tr><td>0,8</td><td>0,7881</td><td>– 2,2</td><td>0,0139</td></tr>
+                        <tr><td>0,9</td><td>0,8159</td><td>– 2,1</td><td>0,0179</td></tr>
+                        <tr><td>1,0</td><td>0,8413</td><td>– 2,0</td><td>0,0228</td></tr>
+                        <tr><td>1,1</td><td>0,8643</td><td>– 1,9</td><td>0,0287</td></tr>
+                        <tr><td>1,2</td><td>0,8849</td><td>– 1,8</td><td>0,0359</td></tr>
+                        <tr><td>1,3</td><td>0,9032</td><td>– 1,7</td><td>0,0446</td></tr>
+                        <tr><td>1,4</td><td>0,9192</td><td>– 1,6</td><td>0,0548</td></tr>
+                        <tr><td>1,5</td><td>0,9332</td><td>– 1,5</td><td>0,0668</td></tr>
+                        <tr><td>1,6</td><td>0,9452</td><td>– 1,4</td><td>0,0808</td></tr>
+                        <tr><td>1,7</td><td>0,9554</td><td>– 1,3</td><td>0,0968</td></tr>
+                        <tr><td>1,8</td><td>0,9641</td><td>– 1,2</td><td>0,1151</td></tr>
+                        <tr><td>1,9</td><td>0,9713</td><td>– 1,1</td><td>0,1357</td></tr>
+                        <tr><td>2,0</td><td>0,9772</td><td>– 1,0</td><td>0,1587</td></tr>
+                        <tr><td>2,1</td><td>0,9821</td><td>– 0,9</td><td>0,1841</td></tr>
+                        <tr><td>2,2</td><td>0,9861</td><td>– 0,8</td><td>0,2119</td></tr>
+                        <tr><td>2,3</td><td>0,9893</td><td>– 0,7</td><td>0,2420</td></tr>
+                        <tr><td>2,4</td><td>0,9918</td><td>– 0,6</td><td>0,2743</td></tr>
+                        <tr><td>2,5</td><td>0,9938</td><td>– 0,5</td><td>0,3085</td></tr>
+                        <tr><td>2,6</td><td>0,9953</td><td>– 0,4</td><td>0,3446</td></tr>
+                        <tr><td>2,7</td><td>0,9965</td><td>– 0,3</td><td>0,3821</td></tr>
+                        <tr><td>2,8</td><td>0,9974</td><td>– 0,2</td><td>0,4207</td></tr>
+                        <tr><td>2,9</td><td>0,9981</td><td>– 0,1</td><td>0,4602</td></tr>
+                        <tr><td>3,0</td><td>0,9987</td><td>– 0,0</td><td>0,5000</td></tr>
+                        </tbody>
+                        </table>
+                        </div>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;*Esta é uma tabela comum e pode ser facilmente encontrada na maioria dos livros de Matemática ou Estatística.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-  
-    <button id="darkModeToggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-    <script>
-        // Funções para gerenciar cookies
-        function setCookie(name, value, days) {
-            const date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            const expires = "expires=" + date.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Lax";
-        }
-
-        function getCookie(name) {
-            const nameEQ = name + "=";
-            const cookies = document.cookie.split(';');
-            for (let i = 0; i < cookies.length; i++) {
-                let cookie = cookies[i].trim();
-                if (cookie.indexOf(nameEQ) === 0) {
-                    return cookie.substring(nameEQ.length, cookie.length);
-                }
-            }
-            return null;
-        }
-
-        // Carregar preferência de dark mode do cookie
-        const darkModeCookie = getCookie('darkMode');
-        if (darkModeCookie === 'enabled') {
-            document.documentElement.classList.add('dark');
-            updateToggleButton(true);
-        }
-
-        function toggleDarkMode() {
-            const isDark = document.documentElement.classList.toggle('dark');
-            // Salvar no cookie por 365 dias (1 ano)
-            setCookie('darkMode', isDark ? 'enabled' : 'disabled', 365);
-            updateToggleButton(isDark);
-        }
-
-        function updateToggleButton(isDark) {
-            const btn = document.getElementById('darkModeToggle');
-            if (btn) {
-                btn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-            }
-        }
-    </script>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
   </body>
 </html>
